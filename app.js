@@ -7,6 +7,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const compression = require("compression");
+const cors = require("cors");
 
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
@@ -33,6 +34,13 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 // Global Middleware
+
+// Implement CORS
+app.use(cors())
+
+app.options("*", cors());
+
+// Access-Control-Allow-Origin
 
 // Set security HTTP headers
 app.use(
