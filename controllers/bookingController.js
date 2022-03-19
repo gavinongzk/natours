@@ -73,7 +73,7 @@ exports.webhookCheckout = (req, res, next) => {
         
     }
 
-    if (event.type === "checkout.session.complete") {
+    if (event.type === "checkout.session.completed") {
         createBookingCheckout(event.data.object);
     }
 
