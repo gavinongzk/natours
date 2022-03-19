@@ -36,14 +36,17 @@ export const displayMap = locations => {
         // Extend mapbounds to include current location
         bounds.extend(loc.coordinates)});
     
-    
-    map.fitBounds(bounds, {
+    const fitBoundsOptions = {
         padding: {
             top: 200,
             bottom: 150,
             left: 100,
             right: 100
-        }});
+        },
+        linear: true
+    }
+
+    map.fitBounds(bounds, fitBoundsOptions);
 
 }
 
