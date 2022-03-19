@@ -10,12 +10,18 @@ const compression = require("compression");
 
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
-const app = express();
 const tourRouter = require("./routes/tourRoutes");
 const userRouter = require("./routes/userRoutes");
 const reviewRouter = require("./routes/reviewRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const bookingRouter = require("./routes/bookingRoutes")
+
+
+const app = express();
+
+app.enable("trust proxy");
+
+
 
 const cookieParser = require("cookie-parser");
 
