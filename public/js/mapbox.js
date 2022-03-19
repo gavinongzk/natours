@@ -6,7 +6,8 @@ export const displayMap = locations => {
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/light-v10', // style URL
-        scrollZoom: false
+        scrollZoom: false,
+        animate: false
     
     });
     
@@ -42,8 +43,7 @@ export const displayMap = locations => {
             bottom: 150,
             left: 100,
             right: 100
-        },
-        duration:0});
+        }});
 
 }
 
