@@ -1286,15 +1286,26 @@ body {
     font-weight: 400;
   }
 
+  .cta__content {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .heading-primary {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
   }
+  .section-header {
+    height: 56vw;
+  }
 
   .heading-secondary {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .header {
     padding: 1.5rem;

@@ -6,8 +6,7 @@ export const displayMap = locations => {
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/light-v10', // style URL
-        scrollZoom: false,
-        animate: false
+        scrollZoom: false
     
     });
     
