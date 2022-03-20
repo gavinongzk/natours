@@ -68,6 +68,13 @@ exports.getAccount = (req, res) => {
       title: 'Your account'
     });
   };
+
+
+exports.getSettings = (req, res) => {
+  res.status(200).render('settings', {
+    title: 'Your settings'
+  });
+};
   
 exports.updateUserData = catchAsync(async (req, res, next) => {
   const updatedUser = await User.findByIdAndUpdate(req.user.id, {

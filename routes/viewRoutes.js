@@ -15,6 +15,8 @@ router.route("/signup").get(viewController.getSignupForm)
 
 router.get("/login", authController.isLoggedIn, viewController.getLoginForm);
 router.get("/me", authController.protect, viewController.getAccount);
+router.get("/settings", authController.protect, viewController.getSettings);
+
 router.get("/my-tours", authController.protect, viewController.getMyTours);
 
 router.post("/submit-user-data", authController.protect, viewController.updateUserData);
