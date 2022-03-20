@@ -1281,6 +1281,21 @@ body {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .cta__text {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
   .header {
     padding: 1.5rem;
   }
