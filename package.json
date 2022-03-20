@@ -31,6 +31,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
+    "compile-sass": "node-sass ./public/sass/main.scss ./public/css/style.css",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
