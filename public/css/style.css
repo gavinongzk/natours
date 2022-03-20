@@ -1300,10 +1300,6 @@ body {
     width: 70%;
     margin: 0 auto;
   }
-  .section-header {
-    height: 56vw;
-  }
-
   .section-description {
     background-color: #fcfcfc;
     margin-top: calc(0px - var(--section-rotate));
@@ -1346,5 +1342,9 @@ body {
     grid-template-columns: 1fr;
     grid-row-gap: 1.25rem;
     justify-items: center;
+  }
+
+  .section-header {
+    height: 72vw;
   }
 }
