@@ -1304,6 +1304,15 @@ body {
     height: 56vw;
   }
 
+  .section-description {
+    background-color: #fcfcfc;
+    margin-top: calc(0px - var(--section-rotate));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+  }
+
   .heading-secondary {
     font-size: 2rem;
   }
