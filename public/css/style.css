@@ -1288,6 +1288,12 @@ body {
   .nav__el.all--tours {
     display: none;
   }
+
+  .user-view__menu {
+    -webkit-box-flex: 10rem;
+    -ms-flex: 10rem 0 0px;
+    flex: 10rem 0 0;
+  }
 }
 
 @media only screen and (max-width: 43em) {
