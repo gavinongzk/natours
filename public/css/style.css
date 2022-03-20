@@ -1331,7 +1331,9 @@ body {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .nav--tours {
+    padding: 1rem;
+  }
   .footer__copyright {
     justify-self: center;
   }
